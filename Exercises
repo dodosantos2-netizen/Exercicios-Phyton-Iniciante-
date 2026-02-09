@@ -1,0 +1,8 @@
+'Escreva um programa que leia valores médios de preços de um modelo de carro por 3 anos consecutivos e exiba o valor mais alto e mais baixo entre esses três anos.'
+Year1 = int(input(f'Enter the yearn on the car model corsa'))
+Valor1 = int(input(f'The year {Year1} the car model corsa R$ '))
+Valor2 = int(input(f'The year {Year1} the car model corsa R$ '))
+Valor3 = int(input(f'The year {Year1} the car model corsa R$ '))
+average = (Valor1 + Valor2 + Valor3)/3
+bigger =  max(Valor1,Valor2,Valor3)
+print(f'The average value is {average} and bigger value is bigger {bigger}')  
