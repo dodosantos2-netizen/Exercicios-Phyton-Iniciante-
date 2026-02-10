@@ -1,0 +1,7 @@
+' Escreva um programa que leia três números e os exiba em ordem decrescente.'
+n1 = int(input('Please , Enter number1 :'))
+n2 = int(input('Please , Enter number2: '))
+n3 = int(input('Please , Emter number3 : '))
+numeros = [n1,n2,n3]
+numeros.sort()
+print(numeros)
