@@ -1,0 +1,19 @@
+'Escreva um programa que peça à pessoa usuária três números que representam os lados de um triângulo.'
+'O programa deve informar se os valores podem ser utilizados para formar um triângulo e, caso afirmativo, se ele é equilátero, isósceles ou escaleno. Tenha em mente algumas dicas:'
+number1 = int(input('Enter please , report whats measueres the side 1 of triangule '))
+number2 = int(input('Enter please , report whats measueres the side 2 of triangule '))
+number3 = int(input('Enter please , report whats measueres the side 3 of triangule '))
+# Verificar se é um tringulo 
+if (number1 + number2 > number3 and 
+    number1 + number3 >number2  and 
+    number2+ number3 > number1):
+
+    # Verificar qual o tipo do trinagulo
+    if number1 == number2 == number3 :
+      print('This equilateral triangule')
+    elif number1 != number2 == number3 or number1 == number2 != number3 or number1 != number3 == number2 or number1==number3 != number2: 
+      print('This isosceles triangule')
+    else: 
+      print('This scalene triangule')
+else:
+  print('These values cannot from um triangle')
